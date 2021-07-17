@@ -2,6 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import imgTeste from "../public/150.png";
+import logo from "../public/logo.png";
+import header from "../public/header.png";
+import produtor from "../public/produtor.jpg";
+import ilustracao from "../public/ilustracao.png";
+import bandeira from "../public/bandeira.webp";
+import icon_ativo from "../public/icons/AdesivoAtivo.png";
+import icon_sprout from "../public/icons/sprout.png";
+import icon_star from "../public/icons/star.png";
+import icon_love from "../public/icons/love.webp";
+import parceiro1 from "../public/parceiros/1.png";
 
 export default function Home() {
   return (
@@ -68,7 +78,7 @@ export default function Home() {
                     style={{ borderWidth: 0, border: 0 }}
                   >
                     <Image
-                      src={imgTeste}
+                      src={logo}
                       className="hs-image-widget "
                       style={{ borderWidth: 0, border: 0 }}
                       width="750"
@@ -199,7 +209,7 @@ export default function Home() {
                                 data-hs-cos-type="linked_image"
                               >
                                 <Image
-                                  src={imgTeste}
+                                  src={header}
                                   className="hs-image-widget "
                                   style={{ maxWidth: "100%", height: "auto" }}
                                   alt="Logo - Branco + GD"
@@ -359,7 +369,7 @@ export default function Home() {
                                 data-hs-cos-type="linked_image"
                               >
                                 <Image
-                                  src={imgTeste}
+                                  src={produtor}
                                   className="hs-image-widget "
                                   width="900"
                                   height="600"
@@ -405,7 +415,7 @@ export default function Home() {
                                 data-hs-cos-type="linked_image"
                               >
                                 <Image
-                                  src={imgTeste}
+                                  src={ilustracao}
                                   className="hs-image-widget "
                                   style={{ maxWidth: "100%", height: "auto" }}
                                   alt="AdesivoAtivo 3@3x"
@@ -591,17 +601,7 @@ export default function Home() {
                                                   role="option"
                                                   aria-describedby="slick-slide00"
                                                   style={{ width: 298 }}
-                                                >
-                                                  <div className="slick-slide-inner-wrapper">
-                                                    <Image
-                                                      src={imgTeste}
-                                                      data-lazy=""
-                                                      alt=""
-                                                      title=""
-                                                      className="slick-loading"
-                                                    />
-                                                  </div>
-                                                </div>
+                                                ></div>
                                               </div>
                                             </div>
                                           </div>
@@ -634,7 +634,7 @@ export default function Home() {
                                       data-hs-cos-type="linked_image"
                                     >
                                       <Image
-                                        src={imgTeste}
+                                        src={bandeira}
                                         className="hs-image-widget "
                                         width="813"
                                         height="963"
@@ -687,7 +687,7 @@ export default function Home() {
                                             data-hs-cos-type="linked_image"
                                           >
                                             <Image
-                                              src={imgTeste}
+                                              src={icon_love}
                                               className="hs-image-widget "
                                               width="49"
                                               height="49"
@@ -765,7 +765,7 @@ export default function Home() {
                                             data-hs-cos-type="linked_image"
                                           >
                                             <Image
-                                              src={imgTeste}
+                                              src={icon_sprout}
                                               className="hs-image-widget "
                                               width="49"
                                               height="49"
@@ -849,7 +849,7 @@ export default function Home() {
                                             data-hs-cos-type="linked_image"
                                           >
                                             <Image
-                                              src={imgTeste}
+                                              src={icon_star}
                                               className="hs-image-widget "
                                               width="49"
                                               height="49"
@@ -928,7 +928,7 @@ export default function Home() {
                                             data-hs-cos-type="linked_image"
                                           >
                                             <Image
-                                              src={imgTeste}
+                                              src={icon_ativo}
                                               className="hs-image-widget "
                                               width="52"
                                               height="57"
@@ -1015,7 +1015,7 @@ export default function Home() {
                                 data-hs-cos-type="linked_image"
                               >
                                 <Image
-                                  src={imgTeste}
+                                  src={ilustracao}
                                   className="hs-image-widget "
                                   style={{ maxWidth: "100%", height: "auto" }}
                                   alt="AdesivoAtivo 3@3x"
@@ -1871,7 +1871,7 @@ export default function Home() {
                                                 >
                                                   <div className="slick-slide-inner-wrapper">
                                                     <Image
-                                                      src={imgTeste}
+                                                      src={parceiro1}
                                                       alt="AdesivoAtivo 1@3x-1"
                                                       title="AdesivoAtivo 1@3x-1"
                                                       style="opacity: 1;"
@@ -1887,16 +1887,7 @@ export default function Home() {
                                                 role="option"
                                                 aria-describedby="slick-slide20"
                                                 style={{ width: 1160 }}
-                                              >
-                                                <div className="slick-slide-inner-wrapper">
-                                                  <Image
-                                                    src={imgTeste}
-                                                    alt="AdesivoAtivo 1@3x-1"
-                                                    title="AdesivoAtivo 1@3x-1"
-                                                    style="opacity: 1;"
-                                                  />
-                                                </div>
-                                              </div>
+                                              ></div>
                                               <div
                                                 className="hs_cos_gallery_slide slick-slide slick-current slick-active"
                                                 data-slick-index="1"
@@ -1908,7 +1899,7 @@ export default function Home() {
                                               >
                                                 <div className="slick-slide-inner-wrapper">
                                                   <Image
-                                                    src={imgTeste}
+                                                    src={parceiro1}
                                                     alt="AdesivoAtivo 1@3x-1"
                                                     title="AdesivoAtivo 1@3x-1"
                                                     style="opacity: 1;"
@@ -1926,7 +1917,7 @@ export default function Home() {
                                               >
                                                 <div className="slick-slide-inner-wrapper">
                                                   <Image
-                                                    src={imgTeste}
+                                                    src={parceiro1}
                                                     alt="AdesivoAtivo 1@3x-1"
                                                     title="AdesivoAtivo 1@3x-1"
                                                     style="opacity: 1;"
@@ -1942,7 +1933,7 @@ export default function Home() {
                                               >
                                                 <div className="slick-slide-inner-wrapper">
                                                   <Image
-                                                    src={imgTeste}
+                                                    src={parceiro1}
                                                     alt="AdesivoAtivo 1@3x-1"
                                                     title="AdesivoAtivo 1@3x-1"
                                                     style="opacity: 1;"
