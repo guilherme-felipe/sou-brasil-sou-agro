@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+import Glide from "@glidejs/glide";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -14,6 +16,24 @@ import icon_love from "../public/icons/love.webp";
 import parceiro1 from "../public/parceiros/1.png";
 
 export default function Home() {
+  useEffect(() => {
+    new Glide(".glide", {
+      keyboard: true,
+      peek: 50,
+      gap: 50,
+      perView: 1,
+      type: "slider",
+    }).mount();
+
+    new Glide(".glideSponsored", {
+      keyboard: true,
+      peek: 50,
+      gap: 50,
+      perView: 3,
+      type: "slider",
+    }).mount();
+  }, []);
+
   return (
     <>
       <div className="body-wrapper hs-content-id-49814602325 hs-landing-page hs-page"></div>
@@ -1412,34 +1432,26 @@ export default function Home() {
                                       className="hs_cos_gallery_main slick-fixed-height-slider slick-initialized slick-slider"
                                       role="toolbar"
                                     >
-                                      <button
-                                        type="button"
-                                        data-role="none"
-                                        className="slick-prev slick-arrow"
-                                        aria-label="←"
-                                        role="button"
-                                        style={{ display: "block" }}
-                                      >
-                                        ←
-                                      </button>
                                       <div
                                         aria-live="polite"
-                                        className="slick-list draggable"
+                                        className="slick-list draggable glide"
                                       >
                                         <div
-                                          className="slick-track"
+                                          className="slick-track glide__track"
+                                          data-glide-el="track"
                                           role="listbox"
                                           style={{
                                             opacity: 1,
                                             width: 2799,
                                           }}
                                         >
-                                          <div
-                                            className="hs_cos_gallery_slide slick-slide slick-cloned"
-                                            data-slick-index="-1"
-                                            aria-hidden="true"
-                                            tabIndex="-1"
-                                            style={{ width: 311 }}
+                                          <ul
+                                            className="glide__slides"
+                                            style={{
+                                              display: "flex",
+                                              justifyContent: "center",
+                                              padding: "24px 0px",
+                                            }}
                                           >
                                             <div className="slick-slide-inner-wrapper">
                                               <Image
@@ -1450,303 +1462,40 @@ export default function Home() {
                                                 style="opacity: 1;"
                                               />
                                             </div>
-                                          </div>
+                                            <div className="slick-slide-inner-wrapper">
+                                              <Image
+                                                src={imgTeste}
+                                                alt="7"
+                                                title="7"
+                                                className=""
+                                                style="opacity: 1;"
+                                              />
+                                            </div>
+                                          </ul>
                                         </div>
                                         <div
-                                          className="hs_cos_gallery_slide slick-slide"
-                                          data-slick-index="0"
-                                          aria-hidden="true"
-                                          tabIndex="-1"
-                                          role="option"
-                                          aria-describedby="slick-slide10"
-                                          style={{ width: 311 }}
+                                          className="glide__bullets"
+                                          data-glide-el="controls[nav]"
                                         >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="1-1"
-                                              title="1-1"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          className="hs_cos_gallery_slide slick-slide"
-                                          data-slick-index="1"
-                                          aria-hidden="true"
-                                          tabIndex="-1"
-                                          role="option"
-                                          aria-describedby="slick-slide11"
-                                          style={{ width: 311 }}
-                                        >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="2"
-                                              title="2"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          className="hs_cos_gallery_slide slick-slide"
-                                          data-slick-index="2"
-                                          aria-hidden="true"
-                                          tabIndex="-1"
-                                          role="option"
-                                          aria-describedby="slick-slide12"
-                                          style={{ width: 311 }}
-                                        >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="3"
-                                              title="3"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          className="hs_cos_gallery_slide slick-slide"
-                                          data-slick-index="3"
-                                          aria-hidden="true"
-                                          tabIndex="-1"
-                                          role="option"
-                                          aria-describedby="slick-slide13"
-                                          style={{ width: 311 }}
-                                        >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="4"
-                                              title="4"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          className="hs_cos_gallery_slide slick-slide slick-current slick-active"
-                                          data-slick-index="4"
-                                          aria-hidden="false"
-                                          tabIndex="-1"
-                                          role="option"
-                                          aria-describedby="slick-slide14"
-                                          style={{ width: 311 }}
-                                        >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="5"
-                                              title="5"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          className="hs_cos_gallery_slide slick-slide"
-                                          data-slick-index="5"
-                                          aria-hidden="true"
-                                          tabIndex="-1"
-                                          role="option"
-                                          aria-describedby="slick-slide15"
-                                          style={{ width: 311 }}
-                                        >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="6"
-                                              title="6"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          className="hs_cos_gallery_slide slick-slide"
-                                          data-slick-index="6"
-                                          aria-hidden="true"
-                                          tabIndex="-1"
-                                          role="option"
-                                          aria-describedby="slick-slide16"
-                                          style={{ width: 311 }}
-                                        >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="7"
-                                              title="7"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          className="hs_cos_gallery_slide slick-slide slick-cloned"
-                                          data-slick-index="7"
-                                          aria-hidden="true"
-                                          tabIndex="-1"
-                                          style={{ width: 311 }}
-                                        >
-                                          <div className="slick-slide-inner-wrapper">
-                                            <Image
-                                              src={imgTeste}
-                                              alt="1-1"
-                                              title="1-1"
-                                              className=""
-                                              style="opacity: 1;"
-                                            />
-                                          </div>
+                                          <button
+                                            className="glide__bullet btn"
+                                            data-glide-dir={`=0`}
+                                            style={{
+                                              margin: "0 8px",
+                                              backgroundColor: "#B8860B",
+                                            }}
+                                          ></button>
+                                          <button
+                                            className="glide__bullet btn"
+                                            data-glide-dir={`=1`}
+                                            style={{
+                                              margin: "0 8px",
+                                              backgroundColor: "#B8860B",
+                                            }}
+                                          ></button>
                                         </div>
                                       </div>
                                     </div>
-
-                                    <button
-                                      type="button"
-                                      data-role="none"
-                                      className="slick-next slick-arrow"
-                                      aria-label="→"
-                                      role="button"
-                                      style={{ display: "block" }}
-                                    >
-                                      →
-                                    </button>
-                                    <ul
-                                      className="slick-dots"
-                                      style={{ display: "block" }}
-                                      role="tablist"
-                                    >
-                                      <li
-                                        className=""
-                                        aria-hidden="true"
-                                        role="presentation"
-                                        aria-selected="true"
-                                        aria-controls="navigation10"
-                                        id="slick-slide10"
-                                      >
-                                        <button
-                                          type="button"
-                                          data-role="none"
-                                          role="button"
-                                          aria-required="false"
-                                          tabIndex="0"
-                                        >
-                                          1
-                                        </button>
-                                      </li>
-                                      <li
-                                        aria-hidden="true"
-                                        role="presentation"
-                                        aria-selected="false"
-                                        aria-controls="navigation11"
-                                        id="slick-slide11"
-                                        className=""
-                                      >
-                                        <button
-                                          type="button"
-                                          data-role="none"
-                                          role="button"
-                                          aria-required="false"
-                                          tabIndex="0"
-                                        >
-                                          2
-                                        </button>
-                                      </li>
-                                      <li
-                                        aria-hidden="true"
-                                        role="presentation"
-                                        aria-selected="false"
-                                        aria-controls="navigation12"
-                                        id="slick-slide12"
-                                        className=""
-                                      >
-                                        <button
-                                          type="button"
-                                          data-role="none"
-                                          role="button"
-                                          aria-required="false"
-                                          tabIndex="0"
-                                        >
-                                          3
-                                        </button>
-                                      </li>
-                                      <li
-                                        aria-hidden="true"
-                                        role="presentation"
-                                        aria-selected="false"
-                                        aria-controls="navigation13"
-                                        id="slick-slide13"
-                                        className=""
-                                      >
-                                        <button
-                                          type="button"
-                                          data-role="none"
-                                          role="button"
-                                          aria-required="false"
-                                          tabIndex="0"
-                                        >
-                                          4
-                                        </button>
-                                      </li>
-                                      <li
-                                        aria-hidden="false"
-                                        role="presentation"
-                                        aria-selected="false"
-                                        aria-controls="navigation14"
-                                        id="slick-slide14"
-                                        className="slick-active"
-                                      >
-                                        <button
-                                          type="button"
-                                          data-role="none"
-                                          role="button"
-                                          aria-required="false"
-                                          tabIndex="0"
-                                        >
-                                          5
-                                        </button>
-                                      </li>
-                                      <li
-                                        aria-hidden="true"
-                                        role="presentation"
-                                        aria-selected="false"
-                                        aria-controls="navigation15"
-                                        id="slick-slide15"
-                                        className=""
-                                      >
-                                        <button
-                                          type="button"
-                                          data-role="none"
-                                          role="button"
-                                          aria-required="false"
-                                          tabIndex="0"
-                                        >
-                                          6
-                                        </button>
-                                      </li>
-                                      <li
-                                        aria-hidden="true"
-                                        role="presentation"
-                                        aria-selected="false"
-                                        aria-controls="navigation16"
-                                        id="slick-slide16"
-                                        className=""
-                                      >
-                                        <button
-                                          type="button"
-                                          data-role="none"
-                                          role="button"
-                                          aria-required="false"
-                                          tabIndex="0"
-                                        >
-                                          7
-                                        </button>
-                                      </li>
-                                    </ul>
                                   </div>
                                 </div>
                               </span>
@@ -1840,22 +1589,12 @@ export default function Home() {
                                           className="hs_cos_gallery"
                                         >
                                           <div className="hs_cos_gallery_main slick-fixed-height-slider slick-initialized slick-slider">
-                                            <button
-                                              type="button"
-                                              data-role="none"
-                                              className="slick-prev slick-arrow"
-                                              aria-label="←"
-                                              role="button"
-                                              style={{ display: "block" }}
-                                            >
-                                              ←
-                                            </button>
                                             <div
                                               aria-live="polite"
                                               className="slick-list draggable"
                                             >
                                               <div
-                                                className="slick-track"
+                                                className="slick-track glideSponsored"
                                                 role="listbox"
                                                 style={{
                                                   opacity: 1,
@@ -1863,96 +1602,44 @@ export default function Home() {
                                                 }}
                                               >
                                                 <div
-                                                  className="hs_cos_gallery_slide slick-slide slick-cloned"
+                                                  className="hs_cos_gallery_slide slick-slide slick-cloned glide__track"
+                                                  data-glide-el="track"
                                                   data-slick-index="-1"
                                                   aria-hidden="true"
                                                   tabIndex="-1"
                                                   style={{ width: 1160 }}
                                                 >
-                                                  <div className="slick-slide-inner-wrapper">
+                                                  <ul
+                                                    className="glide__slides"
+                                                    style={{
+                                                      display: "flex",
+                                                      justifyContent: "center",
+                                                      padding: "24px 0px",
+                                                    }}
+                                                  >
                                                     <Image
                                                       src={parceiro1}
                                                       alt="AdesivoAtivo 1@3x-1"
                                                       title="AdesivoAtivo 1@3x-1"
                                                       style="opacity: 1;"
                                                     />
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div
-                                                className="hs_cos_gallery_slide slick-slide"
-                                                data-slick-index="0"
-                                                aria-hidden="true"
-                                                tabIndex="-1"
-                                                role="option"
-                                                aria-describedby="slick-slide20"
-                                                style={{ width: 1160 }}
-                                              ></div>
-                                              <div
-                                                className="hs_cos_gallery_slide slick-slide slick-current slick-active"
-                                                data-slick-index="1"
-                                                aria-hidden="false"
-                                                tabIndex="-1"
-                                                role="option"
-                                                aria-describedby="slick-slide21"
-                                                style={{ width: 1160 }}
-                                              >
-                                                <div className="slick-slide-inner-wrapper">
-                                                  <Image
-                                                    src={parceiro1}
-                                                    alt="AdesivoAtivo 1@3x-1"
-                                                    title="AdesivoAtivo 1@3x-1"
-                                                    style="opacity: 1;"
-                                                  />
-                                                </div>
-                                              </div>
-                                              <div
-                                                className="hs_cos_gallery_slide slick-slide"
-                                                data-slick-index="2"
-                                                aria-hidden="true"
-                                                tabIndex="-1"
-                                                role="option"
-                                                aria-describedby="slick-slide22"
-                                                style={{ width: 1160 }}
-                                              >
-                                                <div className="slick-slide-inner-wrapper">
-                                                  <Image
-                                                    src={parceiro1}
-                                                    alt="AdesivoAtivo 1@3x-1"
-                                                    title="AdesivoAtivo 1@3x-1"
-                                                    style="opacity: 1;"
-                                                  />
-                                                </div>
-                                              </div>
-                                              <div
-                                                className="hs_cos_gallery_slide slick-slide slick-cloned"
-                                                data-slick-index="3"
-                                                aria-hidden="true"
-                                                tabIndex="-1"
-                                                style={{ width: 1160 }}
-                                              >
-                                                <div className="slick-slide-inner-wrapper">
-                                                  <Image
-                                                    src={parceiro1}
-                                                    alt="AdesivoAtivo 1@3x-1"
-                                                    title="AdesivoAtivo 1@3x-1"
-                                                    style="opacity: 1;"
-                                                  />
+                                                    <Image
+                                                      src={imgTeste}
+                                                      alt="AdesivoAtivo 1@3x-1"
+                                                      title="AdesivoAtivo 1@3x-1"
+                                                      style="opacity: 1;"
+                                                    />
+                                                    <Image
+                                                      src={imgTeste}
+                                                      alt="AdesivoAtivo 1@3x-1"
+                                                      title="AdesivoAtivo 1@3x-1"
+                                                      style="opacity: 1;"
+                                                    />
+                                                  </ul>
                                                 </div>
                                               </div>
                                             </div>
                                           </div>
-
-                                          <button
-                                            type="button"
-                                            data-role="none"
-                                            className="slick-next slick-arrow"
-                                            aria-label="→"
-                                            role="button"
-                                            style={{ display: "block" }}
-                                          >
-                                            →
-                                          </button>
                                         </div>
                                       </div>
                                     </span>
