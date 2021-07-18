@@ -14,6 +14,13 @@ import icon_sprout from "../public/icons/sprout.png";
 import icon_star from "../public/icons/star.png";
 import icon_love from "../public/icons/love.webp";
 import parceiro1 from "../public/parceiros/1.png";
+import orgulho1 from "../public/orgulho/1.png";
+import orgulho2 from "../public/orgulho/2.png";
+import orgulho3 from "../public/orgulho/3.png";
+import orgulho4 from "../public/orgulho/4.png";
+import orgulho5 from "../public/orgulho/5.png";
+import orgulho6 from "../public/orgulho/6.png";
+import orgulho7 from "../public/orgulho/7.png";
 
 export default function Home() {
   useEffect(() => {
@@ -29,7 +36,7 @@ export default function Home() {
       keyboard: true,
       peek: 50,
       gap: 50,
-      perView: 3,
+      perView: 6,
       type: "slider",
     }).mount();
   }, []);
@@ -93,14 +100,14 @@ export default function Home() {
                   data-hs-cos-type="logo"
                 >
                   <a
-                    href="//graodireto-8916855.hs-sites.com/"
+                    href="//www.soubrasilsouagro.com.br/"
                     id="hs-link-header_logo_hs_logo_widget"
                     style={{ borderWidth: 0, border: 0 }}
                   >
                     <Image
                       src={logo}
-                      className="hs-image-widget "
-                      style={{ borderWidth: 0, border: 0 }}
+                      className="logo"
+                      style={{ borderWidth: 0, border: 0, height: 100 }}
                       width="750"
                       height="100%"
                       alt="Sem título-1"
@@ -158,30 +165,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="container-fluid header__dnd--bottom">
-            <div className="row-fluid-wrapper">
-              <div className="row-fluid">
-                <div
-                  className="span12 widget-span widget-type-cell "
-                  data-widget-type="cell"
-                  data-x="0"
-                  data-w="12"
-                >
-                  <div className="row-fluid-wrapper row-depth-1 row-number-1 dnd-section">
-                    <div className="row-fluid ">
+          <div className="row-fluid-wrapper">
+            <div className="row-fluid">
+              <div
+                className="span12 widget-span widget-type-cell "
+                data-widget-type="cell"
+                data-x="0"
+                data-w="12"
+              >
+                <div className="row-fluid-wrapper row-depth-1 row-number-1 dnd-section">
+                  <div className="row-fluid ">
+                    <div
+                      className="span12 widget-span widget-type-custom_widget dnd-module"
+                      data-widget-type="custom_widget"
+                      data-x="0"
+                      data-w="12"
+                    >
                       <div
-                        className="span12 widget-span widget-type-custom_widget dnd-module"
-                        data-widget-type="custom_widget"
-                        data-x="0"
-                        data-w="12"
-                      >
-                        <div
-                          id="hs_cos_wrapper_widget_1625161671702"
-                          className="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                          data-hs-cos-general-type="widget"
-                          data-hs-cos-type="module"
-                        ></div>
-                      </div>
+                        id="hs_cos_wrapper_widget_1625161671702"
+                        className="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
+                        data-hs-cos-general-type="widget"
+                        data-hs-cos-type="module"
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -1455,7 +1460,7 @@ export default function Home() {
                                           >
                                             <div className="slick-slide-inner-wrapper">
                                               <Image
-                                                src={imgTeste}
+                                                src={orgulho1}
                                                 alt="7"
                                                 title="7"
                                                 className=""
@@ -1464,7 +1469,52 @@ export default function Home() {
                                             </div>
                                             <div className="slick-slide-inner-wrapper">
                                               <Image
-                                                src={imgTeste}
+                                                src={orgulho2}
+                                                alt="7"
+                                                title="7"
+                                                className=""
+                                                style="opacity: 1;"
+                                              />
+                                            </div>
+                                            <div className="slick-slide-inner-wrapper">
+                                              <Image
+                                                src={orgulho3}
+                                                alt="7"
+                                                title="7"
+                                                className=""
+                                                style="opacity: 1;"
+                                              />
+                                            </div>
+                                            <div className="slick-slide-inner-wrapper">
+                                              <Image
+                                                src={orgulho4}
+                                                alt="7"
+                                                title="7"
+                                                className=""
+                                                style="opacity: 1;"
+                                              />
+                                            </div>
+                                            <div className="slick-slide-inner-wrapper">
+                                              <Image
+                                                src={orgulho5}
+                                                alt="7"
+                                                title="7"
+                                                className=""
+                                                style="opacity: 1;"
+                                              />
+                                            </div>
+                                            <div className="slick-slide-inner-wrapper">
+                                              <Image
+                                                src={orgulho6}
+                                                alt="7"
+                                                title="7"
+                                                className=""
+                                                style="opacity: 1;"
+                                              />
+                                            </div>
+                                            <div className="slick-slide-inner-wrapper">
+                                              <Image
+                                                src={orgulho7}
                                                 alt="7"
                                                 title="7"
                                                 className=""
@@ -1488,6 +1538,46 @@ export default function Home() {
                                           <button
                                             className="glide__bullet btn"
                                             data-glide-dir={`=1`}
+                                            style={{
+                                              margin: "0 8px",
+                                              backgroundColor: "#B8860B",
+                                            }}
+                                          ></button>
+                                          <button
+                                            className="glide__bullet btn"
+                                            data-glide-dir={`=2`}
+                                            style={{
+                                              margin: "0 8px",
+                                              backgroundColor: "#B8860B",
+                                            }}
+                                          ></button>
+                                          <button
+                                            className="glide__bullet btn"
+                                            data-glide-dir={`=3`}
+                                            style={{
+                                              margin: "0 8px",
+                                              backgroundColor: "#B8860B",
+                                            }}
+                                          ></button>
+                                          <button
+                                            className="glide__bullet btn"
+                                            data-glide-dir={`=4`}
+                                            style={{
+                                              margin: "0 8px",
+                                              backgroundColor: "#B8860B",
+                                            }}
+                                          ></button>
+                                          <button
+                                            className="glide__bullet btn"
+                                            data-glide-dir={`=5`}
+                                            style={{
+                                              margin: "0 8px",
+                                              backgroundColor: "#B8860B",
+                                            }}
+                                          ></button>
+                                          <button
+                                            className="glide__bullet btn"
+                                            data-glide-dir={`=6`}
                                             style={{
                                               margin: "0 8px",
                                               backgroundColor: "#B8860B",
@@ -1624,13 +1714,7 @@ export default function Home() {
                                                       style="opacity: 1;"
                                                     />
                                                     <Image
-                                                      src={imgTeste}
-                                                      alt="AdesivoAtivo 1@3x-1"
-                                                      title="AdesivoAtivo 1@3x-1"
-                                                      style="opacity: 1;"
-                                                    />
-                                                    <Image
-                                                      src={imgTeste}
+                                                      src={parceiro1}
                                                       alt="AdesivoAtivo 1@3x-1"
                                                       title="AdesivoAtivo 1@3x-1"
                                                       style="opacity: 1;"

@@ -258,3 +258,7 @@
 .hs-inline-edit > li.has-submenu.focus .submenu.level-2 {
   visibility: hidden;
 }
+
+.hs-image-widget {
+  height: auto;
+}

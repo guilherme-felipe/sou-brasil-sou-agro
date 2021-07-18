@@ -1000,3 +1000,23 @@
   line-height: 15px;
   font-size: 15px;
 }
+
+#hs_cos_wrapper_header_logo img {
+  height: 27.33px;
+  width: 250px;
+}
+
+.glide__bullet {
+  margin: 0 8px;
+  background-color: #a6a6a6 !important;
+  border: 0px;
+  display: inline-block;
+  width: 0px;
+  height: 8px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.glide__bullet--active {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
