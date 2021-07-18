@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
-import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import imgTeste from "../public/150.png";
 import logo from "../public/logo.png";
 import header from "../public/header.png";
 import produtor from "../public/produtor.jpg";
@@ -37,6 +34,22 @@ export default function Home() {
       peek: 50,
       gap: 50,
       perView: 6,
+      type: "slider",
+    }).mount();
+
+    new Glide(".glideTestemunial", {
+      keyboard: true,
+      peek: 50,
+      gap: 50,
+      perView: 1,
+      type: "slider",
+    }).mount();
+
+    new Glide(".glideTestemunial2", {
+      keyboard: true,
+      peek: 50,
+      gap: 50,
+      perView: 1,
       type: "slider",
     }).mount();
   }, []);
@@ -1526,6 +1539,10 @@ export default function Home() {
                                         <div
                                           className="glide__bullets"
                                           data-glide-el="controls[nav]"
+                                          style={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                          }}
                                         >
                                           <button
                                             className="glide__bullet btn"
@@ -1735,172 +1752,178 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="row-fluid-wrapper row-depth-1 row-number-17 dnd-row">
-                        <div className="row-fluid ">
+                      <div className="row">
+                        <div
+                          aria-live="testemunial"
+                          className="row-fluid slick-list draggable glideTestemunial"
+                        >
                           <div
-                            className="span12 widget-span widget-type-custom_widget dnd-module"
-                            data-widget-type="custom_widget"
-                            data-x="0"
-                            data-w="12"
+                            className="slick-track glide__track"
+                            data-glide-el="track"
+                            role="listbox"
+                            style={{
+                              opacity: 1,
+                              width: 2799,
+                            }}
                           >
-                            <div
-                              id="hs_cos_wrapper_widget_1625080248342"
-                              className="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                              data-hs-cos-general-type="widget"
-                              data-hs-cos-type="module"
+                            <ul
+                              className="glide__slides"
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                padding: "24px 0px",
+                              }}
                             >
-                              <div
-                                className="tns-outer"
-                                id="slider-container--widget_1625080248342-ow"
-                              >
-                                <div
-                                  className="tns-liveregion tns-visually-hidden"
-                                  aria-live="polite"
-                                  aria-atomic="true"
-                                >
-                                  slide <span className="current">3</span> of 3
-                                </div>
-                                <div
-                                  id="slider-container--widget_1625080248342-mw"
-                                  className="tns-ovh"
-                                >
-                                  <div
-                                    className="tns-inner"
-                                    id="slider-container--widget_1625080248342-iw"
-                                  >
-                                    <div
-                                      className="slider-container  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal"
-                                      id="slider-container--widget_1625080248342"
-                                    >
-                                      <div
-                                        className="tns-item"
-                                        aria-hidden="true"
-                                        tabIndex="-1"
-                                      >
-                                        <div className="testimonial">
-                                          <blockquote className="testimonial__content">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore
-                                            et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud
-                                            exercitation
-                                            <cite className="testimonial__author__name">
-                                              Lori Hahn
-                                            </cite>
-                                          </blockquote>
-                                        </div>
-                                      </div>
-
-                                      <div
-                                        className="tns-item"
-                                        id="slider-container--widget_1625080248342-item0"
-                                        aria-hidden="true"
-                                        tabIndex="-1"
-                                      >
-                                        <div className="testimonial">
-                                          <blockquote className="testimonial__content">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore
-                                            et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud
-                                            exercitation
-                                            <cite className="testimonial__author__name">
-                                              Lori Hahn
-                                            </cite>
-                                          </blockquote>
-                                        </div>
-                                      </div>
-
-                                      <div
-                                        className="tns-item tns-slide-active"
-                                        id="slider-container--widget_1625080248342-item1"
-                                      >
-                                        <div className="testimonial">
-                                          <blockquote className="testimonial__content">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore
-                                            et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud
-                                            exercitation
-                                            <cite className="testimonial__author__name">
-                                              Lori Hahn
-                                            </cite>
-                                          </blockquote>
-                                        </div>
-                                      </div>
-
-                                      <div
-                                        className="tns-item"
-                                        id="slider-container--widget_1625080248342-item2"
-                                        aria-hidden="true"
-                                        tabIndex="-1"
-                                      >
-                                        <div className="testimonial">
-                                          <blockquote className="testimonial__content">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore
-                                            et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud
-                                            exercitation
-                                            <cite className="testimonial__author__name">
-                                              Lori Hahn
-                                            </cite>
-                                          </blockquote>
-                                        </div>
-                                      </div>
-
-                                      <div
-                                        className="tns-item"
-                                        aria-hidden="true"
-                                        tabIndex="-1"
-                                      >
-                                        <div className="testimonial">
-                                          <blockquote className="testimonial__content">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore
-                                            et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud
-                                            exercitation
-                                            <cite className="testimonial__author__name">
-                                              Lori Hahn
-                                            </cite>
-                                          </blockquote>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  className="tns-nav"
-                                  aria-label="Carousel Pagination"
-                                >
-                                  <button
-                                    data-nav="0"
-                                    aria-controls="slider-container--widget_1625080248342"
-                                    aria-label="Carousel Page 1"
-                                    className=""
-                                    tabIndex="-1"
-                                  ></button>
-                                  <button
-                                    data-nav="1"
-                                    aria-controls="slider-container--widget_1625080248342"
-                                    aria-label="Carousel Page 2 (Current Slide)"
-                                    className="tns-nav-active"
-                                  ></button>
-                                  <button
-                                    data-nav="2"
-                                    tabIndex="-1"
-                                    aria-controls="slider-container--widget_1625080248342"
-                                    aria-label="Carousel Page 3"
-                                  ></button>
-                                </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
                               </div>
-                            </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                            </ul>
+                          </div>
+                          <div
+                            className="glide__bullets"
+                            data-glide-el="controls[nav]"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=0`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=1`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=2`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=3`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=4`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=5`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=6`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
                           </div>
                         </div>
                       </div>
@@ -1945,186 +1968,178 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="row-fluid-wrapper row-depth-1 row-number-20 dnd_area-column-50-row-1-vertical-alignment dnd-row">
-                        <div className="row-fluid ">
+                      <div className="row">
+                        <div
+                          aria-live="testemunial"
+                          className="row-fluid slick-list draggable glideTestemunial2"
+                        >
                           <div
-                            className="span12 widget-span widget-type-cell cell_1624996348575-vertical-alignment dnd-column"
-                            data-widget-type="cell"
-                            data-x="0"
-                            data-w="12"
+                            className="slick-track glide__track"
+                            data-glide-el="track"
+                            role="listbox"
+                            style={{
+                              opacity: 1,
+                              width: 2799,
+                            }}
                           >
-                            <div className="row-fluid-wrapper row-depth-1 row-number-21 dnd-row">
-                              <div className="row-fluid ">
-                                <div
-                                  className="span12 widget-span widget-type-custom_widget dnd-module"
-                                  data-widget-type="custom_widget"
-                                  data-x="0"
-                                  data-w="12"
-                                >
-                                  <div
-                                    id="hs_cos_wrapper_dnd_area-module-52"
-                                    className="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                    data-hs-cos-general-type="widget"
-                                    data-hs-cos-type="module"
-                                  >
-                                    <div
-                                      className="tns-outer"
-                                      id="slider-container--dnd_area-module-52-ow"
-                                    >
-                                      <div
-                                        className="tns-liveregion tns-visually-hidden"
-                                        aria-live="polite"
-                                        aria-atomic="true"
-                                      >
-                                        slide <span className="current">2</span>{" "}
-                                        of 3
-                                      </div>
-                                      <div
-                                        id="slider-container--dnd_area-module-52-mw"
-                                        className="tns-ovh"
-                                      >
-                                        <div
-                                          className="tns-inner"
-                                          id="slider-container--dnd_area-module-52-iw"
-                                        >
-                                          <div
-                                            className="slider-container  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal"
-                                            id="slider-container--dnd_area-module-52"
-                                            style={{
-                                              transitionDuration: 0,
-                                            }}
-                                          >
-                                            <div
-                                              className="tns-item"
-                                              aria-hidden="true"
-                                              tabIndex="-1"
-                                            >
-                                              <div className="testimonial">
-                                                <blockquote className="testimonial__content">
-                                                  Lorem ipsum, dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Expedita non optio iure
-                                                  impedit saepe laudantium
-                                                  fugit, repellendus maiores,
-                                                  maxime unde deleniti.
-                                                  <cite className="testimonial__author__name">
-                                                    Chris Sullivan
-                                                  </cite>
-                                                </blockquote>
-                                              </div>
-                                            </div>
-
-                                            <div
-                                              className="tns-item tns-slide-active"
-                                              id="slider-container--dnd_area-module-52-item0"
-                                            >
-                                              <div className="testimonial">
-                                                <blockquote className="testimonial__content">
-                                                  Lorem ipsum, dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Expedita non optio iure
-                                                  impedit saepe laudantium
-                                                  fugit, repellendus maiores,
-                                                  maxime unde deleniti.
-                                                  <cite className="testimonial__author__name">
-                                                    Chris Sullivan
-                                                  </cite>
-                                                </blockquote>
-                                              </div>
-                                            </div>
-
-                                            <div
-                                              className="tns-item"
-                                              id="slider-container--dnd_area-module-52-item1"
-                                              aria-hidden="true"
-                                              tabIndex="-1"
-                                            >
-                                              <div className="testimonial">
-                                                <blockquote className="testimonial__content">
-                                                  Lorem ipsum, dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Expedita non optio iure
-                                                  impedit saepe laudantium
-                                                  fugit, repellendus maiores,
-                                                  maxime unde deleniti.
-                                                  <cite className="testimonial__author__name">
-                                                    Chris Sullivan
-                                                  </cite>
-                                                </blockquote>
-                                              </div>
-                                            </div>
-
-                                            <div
-                                              className="tns-item"
-                                              id="slider-container--dnd_area-module-52-item2"
-                                              aria-hidden="true"
-                                              tabIndex="-1"
-                                            >
-                                              <div className="testimonial">
-                                                <blockquote className="testimonial__content">
-                                                  Lorem ipsum, dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Expedita non optio iure
-                                                  impedit saepe laudantium
-                                                  fugit, repellendus maiores,
-                                                  maxime unde deleniti.
-                                                  <cite className="testimonial__author__name">
-                                                    Chris Sullivan
-                                                  </cite>
-                                                </blockquote>
-                                              </div>
-                                            </div>
-
-                                            <div
-                                              className="tns-item"
-                                              aria-hidden="true"
-                                              tabIndex="-1"
-                                            >
-                                              <div className="testimonial">
-                                                <blockquote className="testimonial__content">
-                                                  Lorem ipsum, dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Expedita non optio iure
-                                                  impedit saepe laudantium
-                                                  fugit, repellendus maiores,
-                                                  maxime unde deleniti.
-                                                  <cite className="testimonial__author__name">
-                                                    Chris Sullivan
-                                                  </cite>
-                                                </blockquote>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div
-                                        className="tns-nav"
-                                        aria-label="Carousel Pagination"
-                                      >
-                                        <button
-                                          data-nav="0"
-                                          aria-controls="slider-container--dnd_area-module-52"
-                                          aria-label="Carousel Page 1 (Current Slide)"
-                                          className="tns-nav-active"
-                                        ></button>
-                                        <button
-                                          data-nav="1"
-                                          tabIndex="-1"
-                                          aria-controls="slider-container--dnd_area-module-52"
-                                          aria-label="Carousel Page 2"
-                                        ></button>
-                                        <button
-                                          data-nav="2"
-                                          tabIndex="-1"
-                                          aria-controls="slider-container--dnd_area-module-52"
-                                          aria-label="Carousel Page 3"
-                                        ></button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                            <ul
+                              className="glide__slides"
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                padding: "24px 0px",
+                              }}
+                            >
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
                               </div>
-                            </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                              <div className="testimonial">
+                                <blockquote className="testimonial__content">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud
+                                  exercitation
+                                  <cite className="testimonial__author__name">
+                                    Lori Hahn
+                                  </cite>
+                                </blockquote>
+                              </div>
+                            </ul>
+                          </div>
+                          <div
+                            className="glide__bullets"
+                            data-glide-el="controls[nav]"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=0`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=1`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=2`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=3`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=4`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=5`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
+                            <button
+                              className="glide__bullet btn"
+                              data-glide-dir={`=6`}
+                              style={{
+                                margin: "0 8px",
+                                backgroundColor: "#B8860B",
+                              }}
+                            ></button>
                           </div>
                         </div>
                       </div>
